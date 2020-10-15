@@ -1,7 +1,7 @@
 package com.tang.cn.controller;
 
 import com.tang.cn.param.UserParam;
-import com.tang.cn.service.feign.TestFeignServiceClient;
+import com.tang.cn.service.feign.TestFeignServiceClients;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,18 +15,18 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 public class TestFeignController {
     @Autowired
-    private TestFeignServiceClient testFeignServiceClient;
+    private TestFeignServiceClients testFeignServiceClients;
 
     @ApiOperation(value = "hello")
-    @GetMapping(value = "/test/hello")
+    @GetMapping(value = "/hello")
     public String hello(){
-        return testFeignServiceClient.hello();
+        return testFeignServiceClients.hello();
     }
 
     @ApiOperation(value = "getId")
     @GetMapping(value = "/getId")
     public String getId(@RequestParam(value = "id") String id){
-        return testFeignServiceClient.getId(id);
+        return testFeignServiceClients.getId(id);
     }
 
     @ApiOperation(value = "getUser")

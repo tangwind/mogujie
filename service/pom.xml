@@ -30,11 +30,7 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-feign</artifactId>
-			<version>1.3.5.RELEASE</version>
-		</dependency>
+
 		<dependency>
 			<groupId>com.tang.cn</groupId>
 			<artifactId>common</artifactId>
