@@ -1,0 +1,13 @@
+server:
+  port: 9876
+spring:
+  cloud:
+    config:
+      uri: http://localhost:9450/
+      label: master
+      profile: dev
+  application:
+    name: app
+
+
+
