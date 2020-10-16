@@ -7,3 +7,5 @@ eureka:
     register-with-eureka: false
     serverUrl:
       defaultZone: http://${eureka.instance.hostname}:${server.port}
+
+

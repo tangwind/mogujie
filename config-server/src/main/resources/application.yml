@@ -1,0 +1,14 @@
+server:
+  port: 9450
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: git@gitlab.com:tangwind/kh83-springcloud.git
+          search-paths: config
+          username: windtcc@icloud.com
+          password: 711Tcc817
+          force-pull: true
+      label: master
+
