@@ -5,9 +5,9 @@ spring:
     config:
       server:
         git:
-          uri: git@gitlab.com:tangwind/kh83-springcloud.git
-          search-paths: config
-          username: windtcc@icloud.com
+          uri: https://gitlab.com/tangwind/kh83-springcloud.git
+          search-paths: myConfig
+          username: tangwind
           password: 711Tcc817
           force-pull: true
       label: master
